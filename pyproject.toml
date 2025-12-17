@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "guard"
+version = "0.1.0"
+dependencies = [
+    "autogen-agentchat",
+    "autogen-ext[openai]",
+    "autogen-ext[chromadb]",
+    "autogen-ext[anthropic]",
+    "autogen-core",
+    "python-dotenv",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-dir]
+"" = "src"
