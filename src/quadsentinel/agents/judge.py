@@ -3,7 +3,7 @@ from autogen_core.models import ChatCompletionClient, SystemMessage, UserMessage
 from ..utils.message import JudgeMessage, MsgJudgeMessage
 from ..utils import prompts, functions
 import logging
-logger = logging.getLogger("Guard")
+logger = logging.getLogger("QuadSentinel")
 
 class JudgeAgent(RoutedAgent):
     def __init__(self, model_client: ChatCompletionClient) -> None:

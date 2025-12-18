@@ -5,7 +5,7 @@ from ..utils import prompts
 from ..utils import functions
 import logging
 
-logger = logging.getLogger("Guard")
+logger = logging.getLogger("QuadSentinel")
 
 
 class PredicateWatcher(RoutedAgent):

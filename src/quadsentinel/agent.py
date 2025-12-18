@@ -14,7 +14,7 @@ import os
 import chromadb.utils.embedding_functions as embedding_functions
 from .utils.extraction import create_policy_agent
 from .utils.functions import async_to_sync
-logger = logging.getLogger("Guard")
+logger = logging.getLogger("QuadSentinel")
 
 class Guard:
     def __init__(self, model_client: ChatCompletionClient,

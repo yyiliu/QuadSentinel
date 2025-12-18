@@ -1,5 +1,5 @@
 """
-Agents package for the Guard system.
+Agents package for the QuadSentinel system.
 
 This package contains various agent implementations including:
 - action: Action-based agents

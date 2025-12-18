@@ -6,7 +6,7 @@ from autogen_core import FunctionCall
 import logging
 from autogen_ext.models.openai import OpenAIChatCompletionClient
 from .functions import resolve_model_client
-logger = logging.getLogger("Guard")
+logger = logging.getLogger("QuadSentinel")
 
 from autogen_core import (
     DefaultInterventionHandler,

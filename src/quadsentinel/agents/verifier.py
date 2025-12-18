@@ -3,7 +3,7 @@ from autogen_core import MessageContext, RoutedAgent, message_handler
 from autogen_core.models import ChatCompletionClient, SystemMessage
 from ..utils import prompts
 from ..utils.message import VerifyMessage
-logger = logging.getLogger("Guard")
+logger = logging.getLogger("QuadSentinel")
 
 class PolicyVerifier(RoutedAgent):
     def __init__(self, model_client: ChatCompletionClient) -> None:

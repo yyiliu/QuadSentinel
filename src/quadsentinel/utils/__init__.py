@@ -1,5 +1,5 @@
 """
-Utils package for the Guard system.
+Utils package for the QuadSentinel system.
 
 This package contains utility functions and modules including:
 - extraction: Policy extraction utilities

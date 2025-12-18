@@ -3,7 +3,7 @@ from autogen_core.models import ChatCompletionClient, SystemMessage, UserMessage
 from ..utils.message import ThreatMessage
 from ..utils import prompts
 import logging
-logger = logging.getLogger("Guard")
+logger = logging.getLogger("QuadSentinel")
 from ..utils import functions
 
 class ThreatWatcher(RoutedAgent):

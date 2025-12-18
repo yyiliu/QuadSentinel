@@ -1,12 +1,26 @@
-# Guard
+# QuadSentinel: Sequential Safety for Machine-Checkable Control in Multi-Agent Systems
 
-Guard is a sophisticated AI safety and policy enforcement system designed to monitor and control AI agent interactions, particularly focusing on preventing harmful or inappropriate behaviors in AI systems.
+This repository contains the implementation of **QuadSentinel**, a four-agent guard system for runtime safety enforcement in multi-agent systems, as described in our paper:
+
+> **QuadSentinel: Sequential Safety for Machine-Checkable Control in Multi-Agent Systems**  
+> Yiliu Yang*, Yilei Jiang*, Qunzhong Wang, Yingshui Tan, Xiaoyong Zhu, Sherman S. M. Chow, Bo Zheng, Xiangyu Yue
+
+QuadSentinel compiles natural language safety policies into machine-checkable propositional logic rules and enforces them online through a coordinated team of four specialized agents: State Tracker (PredicateWatcher), Policy Verifier, Threat Watcher, and Referee (JudgeAgent).
+
+## Features
+
+- **Four-agent architecture**: Coordinated guard team for robust safety verification
+- **Policy compilation**: Translates natural language policies to executable propositional logic rules
+- **Top-k predicate optimization**: Efficient predicate selection using semantic similarity search
+- **Hierarchical referee**: Multi-level decision making for conflict resolution
+- **Online enforcement**: Real-time monitoring and intervention for actions and messages
+- **Stateful monitoring**: Threat level tracking and context-aware policy evaluation
 
 ## Project Structure
 
 ```
 .
-├── src/guard/           # Main Guard package
+├── src/quadsentinel/    # Main QuadSentinel package
 │   ├── agent.py         # Core Guard class and create_guard function
 │   ├── agents/          # Specialized agent implementations
 │   │   ├── judge.py     # Judge agent for action evaluation
@@ -21,8 +35,8 @@ Guard is a sophisticated AI safety and policy enforcement system designed to mon
 
 1. Clone the repository:
 ```bash
-git clone [repository-url]
-cd Guard
+git clone https://github.com/yyiliu/QuadSentinel.git
+cd QuadSentinel
 ```
 
 2. Install the package in development mode:
@@ -41,7 +55,7 @@ OPENAI_API_KEY=your_api_key_here
 ### Basic Setup
 
 ```python
-from guard import create_guard
+from quadsentinel import create_guard
 
 # Create a guard instance
 guard = await create_guard()
@@ -84,4 +98,9 @@ allowed, reason = await guard.handle_action(
     description="action description", # optional
     sender="sender_id" # optional
 )
+```
+
+If you use QuadSentinel in your research, please cite:
+```bibtex
+
 ```
