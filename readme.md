@@ -102,5 +102,10 @@ allowed, reason = await guard.handle_action(
 
 If you use QuadSentinel in your research, please cite:
 ```bibtex
-
+@misc{2512.16279,
+Author = {Yiliu Yang and Yilei Jiang and Qunzhong Wang and Yingshui Tan and Xiaoyong Zhu and Sherman S. M. Chow and Bo Zheng and Xiangyu Yue},
+Title = {QuadSentinel: Sequent Safety for Machine-Checkable Control in Multi-agent Systems},
+Year = {2025},
+Eprint = {arXiv:2512.16279},
+}
 ```
